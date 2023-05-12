@@ -1,14 +1,15 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from "react";
 
-import {useRecoilState, useRecoilValue} from 'recoil';
+import { useRecoilState, useRecoilValue } from "recoil";
 
-import CurrentWeather from './screens/CurrentWeather';
-import Loading from './screens/Loading';
+import Main from "./screens/Main/Main";
+import Loading from "./screens/Loading/Loading";
 
-import {SearchDoneState, isOpenState} from './recoil/state';
+import { SearchDoneState, isOpenState } from "./recoil/state";
 
-import './App.css';
-import Modal from '../src/components/Modal';
+import Modal from "./components/Search/Modal/Modal";
+
+import "./App.css";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -29,19 +30,15 @@ const App = () => {
 
   return (
     <div className="App">
-      {loading ? <Loading /> : null}
-      {!loading ? (
+      {loading && <Loading />}
+      {!loading && (
         <>
           <button className="header-container" onClick={openModal}>
             Search City
           </button>
           {isOpen ? <Modal /> : <></>}
-          <div className="main-container">
-            {SearchDone ? <CurrentWeather /> : null}{' '}
-          </div>
+          <div className="main-container">{SearchDone ? <Main /> : null} </div>
         </>
-      ) : (
-        <></>
       )}
     </div>
   );

@@ -1,0 +1,51 @@
+.today-font {
+    font-family: 'Darumadrop One';
+    font-size: 20px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon-container {
+      position: relative;
+      height: 100%;
+      width: 100%;
+    }
+    
+    .cloth-icon {
+      /* position: absolute; */
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      /* width: 40px;
+      height: 40px; */
+      border-radius: 50%;
+      /* background-color: #000; */
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+    }
+    
+    .cloth-icon:nth-child(1) {
+      transform: translate(-50%, -50%) rotate(72deg) translateY(-80px);
+    }
+    
+    .cloth-icon:nth-child(2) {
+      transform: translate(-50%, -50%) rotate(144deg) translateY(-80px);
+    }
+    
+    .cloth-icon:nth-child(3) {
+      transform: translate(-50%, -50%) rotate(216deg) translateY(-80px);
+    }
+    
+    .cloth-icon:nth-child(4) {
+      transform: translate(-50%, -50%) rotate(288deg) translateY(-80px);
+    }
+    
+    .cloth-icon:nth-child(5) {
+      transform: translate(-50%, -50%) rotate(360deg) translateY(-80px);
+    }
+    

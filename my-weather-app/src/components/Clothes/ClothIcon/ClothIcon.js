@@ -1,6 +1,6 @@
-import './ClothIcon.css';
+import "./ClothIcon.css";
 
-const ClothIcon = ({clothName}) => {
+const ClothIcon = ({ clothName }) => {
   return (
     <div className="cloth-wrapper">
       <img

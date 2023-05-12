@@ -1,8 +1,8 @@
-import {WEEK} from '../shared/constants';
+import { WEEK } from "../../shared/constants";
 
-import './CurrentDate.css';
+import "./TodayDate.css";
 
-const CurrentDate = () => {
+const TodayDate = () => {
   const current = new Date();
 
   const year = current.getFullYear();
@@ -15,4 +15,4 @@ const CurrentDate = () => {
   return <div className="today-container">{today}</div>;
 };
 
-export default CurrentDate;
+export default TodayDate;

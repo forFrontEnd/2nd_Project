@@ -1,22 +1,24 @@
-import {useRecoilValue} from 'recoil';
+import { useRecoilValue } from "recoil";
+
+import WeatherIcon from "../WeatherIcon/WeatherIcon";
+
 import {
   currentPollutionLevelState,
   currentWeatherState,
   newCityState,
-} from '../recoil/state';
-import WeatherIcon from './WeatherIcon';
+} from "../../../recoil/state";
 
-import './CurrentWeatherDetail.css';
+import "./WeatherDetail.css";
 
-const CurrentWeatherDetail = () => {
+const WeatherDetail = () => {
   const currentWeather = useRecoilValue(currentWeatherState);
   const currentPollutionLevel = useRecoilValue(currentPollutionLevelState);
   const newCity = useRecoilValue(newCityState);
 
   return (
     <div className="weatherdetail-container">
-      <div style={{fontSize: '40px'}}>{newCity}</div>
-      <div style={{fontSize: '20px'}}>
+      <div style={{ fontSize: "40px" }}>{newCity}</div>
+      <div style={{ fontSize: "20px" }}>
         <div>현재: {currentWeather.temp}°</div>
         <WeatherIcon />
         <div>체감: {currentWeather.feels_like}°</div>
@@ -29,4 +31,4 @@ const CurrentWeatherDetail = () => {
   );
 };
 
-export default CurrentWeatherDetail;
+export default WeatherDetail;
