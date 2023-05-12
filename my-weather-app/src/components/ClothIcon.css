@@ -1,0 +1,40 @@
+.cloth-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+    
+}
+
+.clothes-name {
+    font-family: 'Darumadrop One';
+    font-size: 20px;
+}
+  
+
+.cloth-icon {
+    width: 2vw;
+    margin: 10px 10px 10px 10px;   
+    background-color: aliceblue;
+}
+
+.cloth-icon.floating {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+  
+  

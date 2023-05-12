@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Darumadrop One';
+    src: url(./assets/fonts/DarumadropOne-Regular.ttf);
+}
+
+.header-container {
+    width: 300px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+
+    font-family: 'Darumadrop One';
+}
