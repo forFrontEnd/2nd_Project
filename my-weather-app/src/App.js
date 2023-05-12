@@ -33,11 +33,14 @@ const App = () => {
       {loading && <Loading />}
       {!loading && (
         <>
-          <button className="header-container" onClick={openModal}>
+          <button
+            className={SearchDone ? "header-container" : "not-search"}
+            onClick={openModal}
+          >
             Search City
           </button>
           {isOpen ? <Modal /> : <></>}
-          <div className="main-container">{SearchDone ? <Main /> : null} </div>
+          <div className="main-container">{SearchDone && <Main />} </div>
         </>
       )}
     </div>

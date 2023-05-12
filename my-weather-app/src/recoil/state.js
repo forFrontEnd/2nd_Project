@@ -1,41 +1,44 @@
-import {atom} from 'recoil';
+import { atom } from "recoil";
 
 export const SearchDoneState = atom({
-  key: 'SearchDoneState',
+  key: "SearchDoneState",
   default: false,
 });
 
 export const cityState = atom({
-  key: 'cityState',
-  default: '',
+  key: "cityState",
+  default: "Seoul",
 });
 
 export const locationState = atom({
-  key: 'locationState',
-  default: null,
+  key: "locationState",
+  default: {
+    lat: 37.5666791,
+    lon: 126.9782914,
+  },
 });
 
 export const currentWeatherState = atom({
-  key: 'currentWeatherState',
+  key: "currentWeatherState",
   default: {},
 });
 
 export const currentPollutionLevelState = atom({
-  key: 'currentPollutionLevelState',
+  key: "currentPollutionLevelState",
   default: null,
 });
 
 export const imageUrlState = atom({
-  key: 'imageUrlState',
+  key: "imageUrlState",
   default: null,
 });
 
 export const isOpenState = atom({
-  key: 'isOpenState',
+  key: "isOpenState",
   default: false,
 });
 
 export const newCityState = atom({
-  key: 'newCityState',
-  default: '',
+  key: "newCityState",
+  default: "",
 });

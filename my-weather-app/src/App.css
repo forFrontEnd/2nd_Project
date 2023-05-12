@@ -11,6 +11,20 @@
     margin-top: 10vh;
 }
 
+.not-search {
+    width: 300px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 40vh;
+
+    font-size: 40px;
+}
+
 * {
     font-family: 'Darumadrop One';
+    font-weight: bold;
 }
+
